@@ -59,7 +59,7 @@ export default {
     }, 10000)
   },
   methods: {
-    ...mapActions('joke', ['fetchRandomJoke', 'fetchJokeById', 'searchJoke']),
+    ...mapActions('joke', ['fetchRandomJoke']),
     async getJoke() {
       this.loading = true
       await this.fetchRandomJoke({
